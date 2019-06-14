@@ -7,8 +7,8 @@ const App = () => {
   const APP_KEY = "08f8cdab485f6cdd14536bb1096e7fc3";
 
   const [recipes, setRecipes] = useState([]);
-  const [search, setSearch] = useState('');
-  const [query, setQuery] = useState('chicken');
+  const [search, setSearch] = useState("");
+  const [query, setQuery] = useState("chicken");
 
   useEffect(() => {
     getRecipes();
@@ -25,13 +25,13 @@ const App = () => {
 
   const updateSearch = e => {
     setSearch(e.target.value);
-  }
+  };
 
   const getSearch = e => {
     e.preventDefault();
     setQuery(search);
-    setSearch('');
-  }
+    setSearch("");
+  };
 
   return (
     <div className="App">
